@@ -1,6 +1,6 @@
 from attrs import define, field
 
-from ice.analysis.config_base import BaseConfig, contains
+from nice.analysis.config_base import BaseConfig, contains
 
 
 @define(kw_only=True)

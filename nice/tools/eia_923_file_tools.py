@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from ice import DATA_DIR
+from nice import DATA_DIR
 
 
 def load_eia_923(file: str, sheet: str = None, year: int = 2024):

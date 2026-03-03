@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ice"
+name = "nice"
 dynamic = ["version"]
 authors = [{name = "Elenya Grant", email = "elenya.grant@nlr.gov"}]
 readme = {file = "README.md", content-type = "text/markdown"}
@@ -38,7 +38,7 @@ dependencies = [
 
 
 [project.urls]
-source = "https://github.com/elenya-grant/ice_us.git"
+source = "https://github.com/elenya-grant/nice_us.git"
 
 [project.optional-dependencies]
 develop = [
@@ -53,15 +53,15 @@ develop = [
     "sphinxcontrib-napoleon",
 ]
 examples = ["jupyterlab"]
-all = ["ice[develop,examples]"]
+all = ["nice[develop,examples]"]
 
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.packages.find]
 include = [
-    "ice",
+    "nice",
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "ice.__version__"}
+version = {attr = "nice.__version__"}

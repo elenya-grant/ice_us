@@ -3,8 +3,8 @@ import copy
 import numpy as np
 import pandas as pd
 
-from ice.tools.eia_860_file_tools import load_eia_860
-from ice.tools.eia_923_file_tools import load_eia_923
+from nice.tools.eia_860_file_tools import load_eia_860
+from nice.tools.eia_923_file_tools import load_eia_923
 
 
 def get_missing_ids_per_dataset(data_year=2024):

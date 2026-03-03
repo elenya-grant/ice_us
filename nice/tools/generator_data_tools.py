@@ -1,7 +1,7 @@
 import calendar
 
-from ice.tools.eia_860_file_tools import load_eia_860
-from ice.tools.eia_923_file_tools import load_eia_923
+from nice.tools.eia_860_file_tools import load_eia_860
+from nice.tools.eia_923_file_tools import load_eia_923
 
 eia_923_to_860_col_mapper = {
     "Plant Id": "Plant Code",

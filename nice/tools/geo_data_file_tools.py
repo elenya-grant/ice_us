@@ -1,7 +1,7 @@
 import geopandas as gpd
 import pandas as pd
 
-from ice import DATA_DIR
+from nice import DATA_DIR
 
 
 def convert_df_to_gdf(

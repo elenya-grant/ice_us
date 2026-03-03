@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from ice import DATA_DIR
+from nice import DATA_DIR
 
 
 def prime_mover_to_desc():

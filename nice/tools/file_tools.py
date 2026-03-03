@@ -3,7 +3,7 @@ from pathlib import Path
 import dill
 import yaml
 
-from ice import ROOT_DIR
+from nice import ROOT_DIR
 
 
 def check_create_folder(filepath):
