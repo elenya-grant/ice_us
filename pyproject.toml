@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ice"
+dynamic = ["version"]
+authors = [{name = "Elenya Grant", email = "elenya.grant@nlr.gov"}]
+readme = {file = "README.md", content-type = "text/markdown"}
+description = "Analysis code for EGrid Data"
+requires-python = ">=3.10, <3.12"
+license = {file = "LICENSE"}
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "numpy-financial",
+    "ProFAST",
+    "pandas>=2.0.3",
+    "pyproj",
+    "python-dotenv",
+    "python-rapidjson",
+    "requests",
+    "scikit-learn",
+    "scikit-optimize",
+    "scipy",
+    "shapely>=2",
+    "setuptools",
+    "timezonefinder",
+    "urllib3",
+    "attrs",
+    "pyyaml-include",
+    "profast",
+    "NREL-rex",
+    "geopy",
+    "dill",
+    "openpyxl"
+]
+
+
+[project.urls]
+source = "https://github.com/elenya-grant/ice_us.git"
+
+[project.optional-dependencies]
+develop = [
+    "isort",
+    "pre-commit",
+    "ruff",
+    "pytest",
+    "pytest-subtests",
+    "pytest-dependency",
+    "responses",
+    "jupyter-book",
+    "sphinxcontrib-napoleon",
+]
+examples = ["jupyterlab"]
+all = ["ice[develop,examples]"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [
+    "ice",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "ice.__version__"}
